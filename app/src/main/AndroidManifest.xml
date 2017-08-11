@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayancheriadmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBDWyr4N3ts5ZiOHTgUaOcS0qRwIYZgUd8" />
+
+        <activity android:name=".CategoryChooser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".listinactivities.BuisnessListActivity" />
+        <activity android:name=".categoryactivities.BuisnessCategoryActivity" />
+        <activity android:name=".listinactivities.EducationListActivity" />
+        <activity android:name=".categoryactivities.EducationCategoryActivity" />
+        <activity android:name=".listinactivities.BloodDonorListActivity" />
+        <activity android:name=".categoryactivities.WorkerCategoryActivity" />
+        <activity android:name=".listinactivities.WorkerListActivity" />
+        <activity android:name=".listinactivities.AutoListActivity" />
+        <activity android:name=".listinactivities.GoodsListActivity" />
+        <activity android:name=".listinactivities.EventListActivity" />
+        <activity android:name=".listinactivities.FoodListActivity" />
+        <activity android:name=".listinactivities.TaxiListActivity" />
+        <activity android:name=".listinactivities.MedicalListActivity" />
+        <activity android:name=".categoryactivities.FoodCategoryActivity" />
+        <activity android:name=".categoryactivities.MedicalCategoryActivity" />
+        <activity android:name=".listinactivities.PuthuvivaramListActivity" />
+        <activity android:name=".categoryactivities.DoctorCategoryActivity" />
+        <activity android:name=".listinactivities.DoctorListActivity" />
+        <activity android:name=".listinactivities.VivaranamListActivity" />
+        <activity android:name=".listinactivities.BirthDeathMarriageActivity" />
+        <activity android:name=".SendCopoun" />
+        <activity android:name=".CoupounDetail"></activity>
+    </application>
+
+</manifest>

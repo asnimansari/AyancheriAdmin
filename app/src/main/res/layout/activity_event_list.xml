@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    tools:context="com.ayancheriadmin.listinactivities.EventListActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:textStyle="bold"
+            android:text="Event Listing"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/eventName"
+            android:lines="1"
+            android:hint="Event Name"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:lines="4"
+            android:hint="Event Address"
+            android:gravity="top"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="DATE"
+            android:id="@+id/date"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="TIME"
+            android:id="@+id/time"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE EVENT"
+
+            android:id="@+id/saveData"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

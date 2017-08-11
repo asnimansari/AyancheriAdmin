@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    tools:context="com.ayancheriadmin.listinactivities.BuisnessListActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="BUSINESS LISTING PAGE"
+            android:layout_height="wrap_content" />'
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/name"
+            android:hint="BUISNESS NAME"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:lines="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Choose Catergory"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/categorySpinner"
+
+            android:layout_height="40dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/address"
+            android:maxLines="10"
+            android:gravity="top"
+            android:lines="5"
+
+            android:hint=" ADDRESS"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/phonenumber"
+            android:hint="PHONE NUMBER"
+            android:inputType="phone"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/hours"
+            android:inputType="textCapWords"
+
+            android:hint="HOURS"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/latitude"
+            android:hint="LATITUDE"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/longitude"
+            android:hint="LONGITUDE"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/loadLocation"
+            android:text="LOAD LOCATION"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="SAVE"
+            android:id="@+id/save"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
