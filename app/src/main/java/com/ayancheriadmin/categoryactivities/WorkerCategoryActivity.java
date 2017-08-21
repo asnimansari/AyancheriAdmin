@@ -74,7 +74,7 @@ public class WorkerCategoryActivity extends AppCompatActivity {
                 String newcagtegory = newcategoryed.getText().toString().trim();
                 if (newcagtegory.length() != 0) {
                     BuisnessCategory buisnessCategory = new BuisnessCategory(newcagtegory);
-                    databaseReference.child(++current_category_count +"").setValue(buisnessCategory).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    databaseReference.push().setValue(buisnessCategory).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){

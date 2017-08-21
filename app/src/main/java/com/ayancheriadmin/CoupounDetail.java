@@ -82,7 +82,7 @@ public class CoupounDetail extends AppCompatActivity {
                 .baseUrl("http://machinser.org:1337")
                 .addConverterFactory(GsonConverterFactory.create());
         Retrofit retrofit = builder.build();
-        final  PushRequest pushRequest = retrofit.create(PushRequest.class);
+        final PushRequest pushRequest = retrofit.create(PushRequest.class);
 
 
 
