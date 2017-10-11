@@ -24,19 +24,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Buisness Categories"
-            android:background="#F4511E"
+            android:background="#FF9800"
+            android:textColor="#ffffff"
 
             android:id="@+id/buisnessCategories"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Education Categories"
-            android:background="#1B5E20"
+            android:background="#8BC34A"
+            android:textColor="#ffffff"
 
             android:id="@+id/educationCategories"/>
         <Button
             android:layout_width="match_parent"
             android:background="#D500F9"
+            android:textColor="#ffffff"
+
 
             android:layout_height="wrap_content"
             android:text="Worker Categories"
@@ -44,24 +48,29 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#BF360C"
+            android:background="#009688"
+            android:textColor="#ffffff"
 
             android:text="Food Categories"
             android:id="@+id/foodCategories"/>
+
         <Button
+            android:id="@+id/medicalCategories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medical Categories"
-            android:background="#C6FF00"
+            android:background="#03A9F4"
+            android:textColor="#ffffff"
 
-            android:id="@+id/medicalCategories"/>
+            android:text="Medical Categories" />
+
         <Button
+            android:id="@+id/doctorCategories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Doctor Categories"
-            android:background="#4527A0"
+            android:background="#3F51B5"
+            android:textColor="#ffffff"
 
-            android:id="@+id/doctorCategories"/>
+            android:text="Doctor Categories" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,36 +86,69 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#F57C00"
+            android:background="#FF9800"
+            android:textColor="#ffffff"
 
             android:id="@+id/buisnessList"
             android:text="Buisness List"/>
+
+        <Button
+            android:id="@+id/educationList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:textColor="#ffffff"
+
+            android:text="Education List" />
+
+        <Button
+            android:id="@+id/workerlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D500F9"
+            android:textColor="#ffffff"
+
+            android:text="Worker List" />
+
+        <Button
+            android:id="@+id/foodList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:textColor="#ffffff"
+
+            android:text="Food List" />
+        <Button
+            android:id="@+id/medicalList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:textColor="#ffffff"
+
+            android:text="Medical List" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/educationList"
-            android:background="#673AB7"
+            android:id="@+id/doctorList"
+            android:background="#3F51B5"
+            android:textColor="#ffffff"
 
-            android:text="Education List"/>
+            android:text="Doctor List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bloodList"
-            android:background="#CDDC39"
+            android:background="#FFEB3B"
+            android:textColor="#ffffff"
 
             android:text="Blood List"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/workerlist"
-            android:background="#EC407A"
 
-            android:text="Worker List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/autoList"
-            android:background="#FF9100"
+            android:background="#8BC34A"
+            android:textColor="#ffffff"
 
             android:text="Auto List"/>
         <Button
@@ -114,6 +156,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/goodsList"
             android:background="#4E342E"
+            android:textColor="#ffffff"
 
             android:text="Goods List"/>
         <Button
@@ -121,6 +164,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/taxiList"
             android:background="#827717"
+            android:textColor="#ffffff"
 
             android:text="Taxi List"/>
         <Button
@@ -128,41 +172,27 @@
             android:layout_height="wrap_content"
             android:id="@+id/eventsList"
             android:background="#00E5FF"
+            android:textColor="#ffffff"
 
             android:text="Events List"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/foodList"
-            android:background="#E91E63"
 
-            android:text="Food List"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/medicalList"
-            android:background="#673AB7"
 
-            android:text="Medical List"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/puthuvivaramList"
-            android:background="#FDD835"
+            android:background="#03A9F4"
+            android:textColor="#ffffff"
 
             android:text="Puthuvivaram"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/doctorList"
-            android:background="#43A047"
 
-            android:text="Doctor List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/vivaranamList"
             android:background="#BF360C"
+            android:textColor="#ffffff"
 
             android:text="Vivaranam"/>
         <Button
@@ -170,12 +200,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/sahayamList"
             android:background="#006064"
+            android:textColor="#ffffff"
 
             android:text="Sahayam"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#004D40"
+            android:textColor="#ffffff"
 
             android:id="@+id/bdm"
             android:text="Birth Death Marriage"/>
@@ -183,6 +215,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#33691E"
+            android:textColor="#ffffff"
 
             android:id="@+id/sendCoupouns"
             android:text="Send Coupons"/>
