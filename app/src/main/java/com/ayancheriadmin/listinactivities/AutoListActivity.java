@@ -7,12 +7,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.ayancheriadmin.CusUtils;
 import com.ayancheriadmin.R;
-import com.ayancheriadmin.models.BloodDonor;
+import com.ayancheriadmin.models.NamePhoneNumberModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -49,7 +48,7 @@ public class AutoListActivity extends AppCompatActivity {
                 String nam = donorname.getText().toString().trim();
                 if(nam.length() != 0){
 
-                    databaseReferece.push().setValue(new BloodDonor(nam,donornumber.getText().toString())).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    databaseReferece.push().setValue(new NamePhoneNumberModel(nam,donornumber.getText().toString())).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.ayancheriadmin.CusUtils;
 import com.ayancheriadmin.R;
-import com.ayancheriadmin.models.BloodDonor;
+import com.ayancheriadmin.models.NamePhoneNumberModel;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -56,7 +56,7 @@ public class BloodDonorListActivity extends AppCompatActivity {
                 String nam = donorname.getText().toString().trim();
                 if(nam.length() != 0){
                     String bloodgrou = bloodgroup.getSelectedItem().toString().toLowerCase().replace("+","p").replace("-","n");
-                    databaseReferece.child(bloodgrou).push().setValue(new BloodDonor(nam,donornumber.getText().toString())).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    databaseReferece.child(bloodgrou).push().setValue(new NamePhoneNumberModel(nam,donornumber.getText().toString())).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){

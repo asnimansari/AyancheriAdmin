@@ -13,7 +13,6 @@ import android.widget.Toast;
 import com.ayancheriadmin.CusUtils;
 import com.ayancheriadmin.R;
 import com.ayancheriadmin.models.BirthDeathMarriage;
-import com.ayancheriadmin.models.BloodDonor;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;

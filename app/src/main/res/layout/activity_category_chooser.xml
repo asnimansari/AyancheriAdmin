@@ -118,6 +118,11 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/sahayamList"
+            android:text="Sahayam"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/bdm"
             android:text="Birth Death Marriage"/>
         <Button

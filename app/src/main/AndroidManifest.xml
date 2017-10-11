@@ -45,7 +45,8 @@
         <activity android:name=".listinactivities.VivaranamListActivity" />
         <activity android:name=".listinactivities.BirthDeathMarriageActivity" />
         <activity android:name=".SendCopoun" />
-        <activity android:name=".CoupounDetail"></activity>
+        <activity android:name=".CoupounDetail" />
+        <activity android:name=".listinactivities.SahayamListActivity"></activity>
     </application>
 
 </manifest>

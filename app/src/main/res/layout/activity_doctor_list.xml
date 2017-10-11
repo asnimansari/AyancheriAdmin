@@ -16,7 +16,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:text="BUSINESS LISTING PAGE"
-            android:layout_height="wrap_content" />'
+            android:layout_height="wrap_content" />
 
         <EditText
             android:layout_width="match_parent"

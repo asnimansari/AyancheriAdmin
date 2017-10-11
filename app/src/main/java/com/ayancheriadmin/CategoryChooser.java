@@ -23,6 +23,7 @@ import com.ayancheriadmin.listinactivities.FoodListActivity;
 import com.ayancheriadmin.listinactivities.GoodsListActivity;
 import com.ayancheriadmin.listinactivities.MedicalListActivity;
 import com.ayancheriadmin.listinactivities.PuthuvivaramListActivity;
+import com.ayancheriadmin.listinactivities.SahayamListActivity;
 import com.ayancheriadmin.listinactivities.TaxiListActivity;
 import com.ayancheriadmin.listinactivities.VivaranamListActivity;
 import com.ayancheriadmin.listinactivities.WorkerListActivity;
@@ -47,6 +48,7 @@ public class CategoryChooser extends AppCompatActivity {
     Button doctorCategory;
     Button doctorList;
     Button vivaranamList;
+    Button sahayamList;
     Button sendCoupouns;
     Button bdm;
 
@@ -72,6 +74,7 @@ public class CategoryChooser extends AppCompatActivity {
         doctorCategory = (Button)findViewById(R.id.doctorCategories);
         doctorList = (Button)findViewById(R.id.doctorList);
         puthuvivaramList = (Button)findViewById(R.id.puthuvivaramList);
+        sahayamList = (Button)findViewById(R.id.sahayamList);
         vivaranamList = (Button)findViewById(R.id.vivaranamList);
         sendCoupouns = (Button)findViewById(R.id.sendCoupouns);
         bdm = (Button)findViewById(R.id.bdm);
@@ -215,10 +218,18 @@ public class CategoryChooser extends AppCompatActivity {
                 startActivity(new Intent(CategoryChooser.this,SendCopoun.class));
                 finish();
             }
-        });bdm.setOnClickListener(new View.OnClickListener() {
+        });
+        bdm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CategoryChooser.this,BirthDeathMarriageActivity.class));
+                finish();
+           }
+        });
+        sahayamList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CategoryChooser.this, SahayamListActivity.class));
                 finish();
             }
         });

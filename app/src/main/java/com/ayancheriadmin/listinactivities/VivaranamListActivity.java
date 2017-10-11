@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.ayancheriadmin.CusUtils;
 import com.ayancheriadmin.R;
-import com.ayancheriadmin.models.BloodDonor;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -36,11 +35,11 @@ public class VivaranamListActivity extends AppCompatActivity {
 
         saveBloodGroup= (Button) findViewById(R.id.saveBloodGroup);
         databaseReferece = CusUtils.getDatabase().getReference().child("Vivaranam");
-        ArrayList<String> bloodlist = new ArrayList<>();
+        ArrayList<String> vivaranamlist = new ArrayList<>();
 
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),
-                R.layout.clistitem,bloodlist);
+                R.layout.clistitem,vivaranamlist);
 
         saveBloodGroup.setOnClickListener(new View.OnClickListener() {
             @Override
