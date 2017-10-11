@@ -14,120 +14,176 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CATEGORIES"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal|center_vertical"
             android:gravity="center"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Buisness Categories"
+            android:background="#F4511E"
+
             android:id="@+id/buisnessCategories"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Education Categories"
+            android:background="#1B5E20"
+
             android:id="@+id/educationCategories"/>
         <Button
             android:layout_width="match_parent"
+            android:background="#D500F9"
+
             android:layout_height="wrap_content"
             android:text="Worker Categories"
             android:id="@+id/workerCategories"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#BF360C"
+
             android:text="Food Categories"
             android:id="@+id/foodCategories"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Medical Categories"
+            android:background="#C6FF00"
+
             android:id="@+id/medicalCategories"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Doctor Categories"
+            android:background="#4527A0"
+
             android:id="@+id/doctorCategories"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="LISTINGS"
+
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+
             android:gravity="center"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#F57C00"
+
             android:id="@+id/buisnessList"
             android:text="Buisness List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/educationList"
+            android:background="#673AB7"
+
             android:text="Education List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bloodList"
+            android:background="#CDDC39"
+
             android:text="Blood List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/workerlist"
+            android:background="#EC407A"
+
             android:text="Worker List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/autoList"
+            android:background="#FF9100"
+
             android:text="Auto List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/goodsList"
+            android:background="#4E342E"
+
             android:text="Goods List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/taxiList"
+            android:background="#827717"
+
             android:text="Taxi List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/eventsList"
+            android:background="#00E5FF"
+
             android:text="Events List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/foodList"
+            android:background="#E91E63"
+
             android:text="Food List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/medicalList"
+            android:background="#673AB7"
+
             android:text="Medical List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/puthuvivaramList"
+            android:background="#FDD835"
+
             android:text="Puthuvivaram"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/doctorList"
+            android:background="#43A047"
+
             android:text="Doctor List"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/vivaranamList"
+            android:background="#BF360C"
+
             android:text="Vivaranam"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sahayamList"
+            android:background="#006064"
+
             android:text="Sahayam"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#004D40"
+
             android:id="@+id/bdm"
             android:text="Birth Death Marriage"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#33691E"
+
             android:id="@+id/sendCoupouns"
             android:text="Send Coupons"/>
     </LinearLayout>
