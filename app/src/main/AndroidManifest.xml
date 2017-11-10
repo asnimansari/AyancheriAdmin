@@ -46,7 +46,11 @@
         <activity android:name=".listinactivities.BirthDeathMarriageActivity" />
         <activity android:name=".SendCopoun" />
         <activity android:name=".CoupounDetail" />
-        <activity android:name=".listinactivities.SahayamListActivity"></activity>
+        <activity android:name=".listinactivities.SahayamListActivity" />
+        <activity
+            android:name=".SendNotification"
+            android:label="@string/title_activity_send_notification"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

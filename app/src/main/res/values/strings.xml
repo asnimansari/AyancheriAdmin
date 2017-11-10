@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ayancheri Admin</string>
+    <string name="title_activity_send_notification">SendNotification</string>
 </resources>

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.SparseBooleanArray;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.ayancheriadmin.models.NotificationAndPromcode;
 import com.ayancheriadmin.models.OfferNotifcation;
@@ -79,7 +77,7 @@ public class CoupounDetail extends AppCompatActivity {
         });
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("http://machinser.org:1337")
+                .baseUrl("http://mobile.msgrid.com:1337")
                 .addConverterFactory(GsonConverterFactory.create());
         Retrofit retrofit = builder.build();
         final PushRequest pushRequest = retrofit.create(PushRequest.class);
@@ -126,7 +124,7 @@ public class CoupounDetail extends AppCompatActivity {
 
                 NotificationAndPromcode tempRelay = new NotificationAndPromcode("You Have A New Notification",tokenList,"സ്മാർട്ട് ആയഞ്ചേരി ",code);
 
-                final Call<ResponseOnPush> responseOnPushCall = pushRequest.sendPushNotification(tempRelay);
+                final Call<ResponseOnPush> responseOnPushCall = pushRequest.sendPushNotificationToIndividuals(tempRelay);
                 responseOnPushCall.enqueue(new Callback<ResponseOnPush>() {
                     @Override
                     public void onResponse(Call<ResponseOnPush> call, Response<ResponseOnPush> response) {

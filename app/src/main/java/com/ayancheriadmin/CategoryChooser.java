@@ -52,6 +52,8 @@ public class CategoryChooser extends AppCompatActivity {
     Button sendCoupouns;
     Button bdm;
 
+    Button sendNotification;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +80,7 @@ public class CategoryChooser extends AppCompatActivity {
         vivaranamList = (Button)findViewById(R.id.vivaranamList);
         sendCoupouns = (Button)findViewById(R.id.sendCoupouns);
         bdm = (Button)findViewById(R.id.bdm);
+        sendNotification = (Button)findViewById(R.id.sendNotification);
 
         buisnessList.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -230,6 +233,13 @@ public class CategoryChooser extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(CategoryChooser.this, SahayamListActivity.class));
+                finish();
+            }
+        });
+        sendNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CategoryChooser.this, SendNotification.class));
                 finish();
             }
         });
