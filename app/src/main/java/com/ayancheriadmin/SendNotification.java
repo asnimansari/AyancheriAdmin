@@ -51,7 +51,7 @@ public class SendNotification extends AppCompatActivity {
                     notf.body = m;
 
                     Retrofit.Builder builder = new Retrofit.Builder()
-                            .baseUrl("http://mobile.msgrid.com:1337")
+                            .baseUrl("http://mobile.msrgrid.com:1337")
                             .addConverterFactory(GsonConverterFactory.create());
                     Retrofit retrofit = builder.build();
                     final PushRequest pushRequest = retrofit.create(PushRequest.class);
