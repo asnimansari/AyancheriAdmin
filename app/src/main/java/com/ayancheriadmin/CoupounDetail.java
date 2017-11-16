@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -149,7 +150,17 @@ public class CoupounDetail extends AppCompatActivity {
                 userModelCClickArrayList = new ArrayList<UserModelCClick>();
                 Iterable<DataSnapshot> dataSnapshotIterable = dataSnapshot.getChildren();
                 for (DataSnapshot dataSnapshot1: dataSnapshotIterable){
-                    UserModelCClick t = dataSnapshot1.getValue(UserModelCClick.class);
+
+                    UserModelCClick t;// = new UserModelCClick();
+                    try{
+
+                        t = dataSnapshot1.getValue(UserModelCClick.class);
+                        Log.e("NAME",t.name);
+                    }
+                    catch (Exception e){
+                        continue;
+
+                    }
                     userlist.add(t.name + " " + t.emailid);
                     uidlist.add(dataSnapshot1.getKey());
                     userModelCClickArrayList.add(dataSnapshot1.getValue(UserModelCClick.class));
