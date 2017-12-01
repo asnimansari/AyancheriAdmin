@@ -19,6 +19,6 @@ public interface PushRequest {
 
     Call<ResponseOnPush> sendPushNotificationToIndividuals(@Body NotificationAndPromcode test);
 
-    @POST("x")
+    @POST("/smartayancheri/sendnotification")
     Call<ResponseOnPush> sendOrdinaryNotifiction(@Body Notf notf);
 }
